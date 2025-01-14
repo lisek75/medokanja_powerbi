@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medokanja Power BI</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="static/css/styles.css">
+    <link rel="icon" href="static/images/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <!-- Header -->
+    <header class="text-white p-3 text-center">
+        <div class="container">
+            <div class="d-flex flex-column align-items-center">
+                <div class="intro">
+                    <h2> Power BI Project – Medokanja 👨‍⚕️👩‍⚕️</h2>
+                    <p>Analyzing patient waitlists to optimize healthcare resources and minimize delays.</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main id="main-content" class="container my-4">
+        <!-- About Section -->
+        <section class="about">
+            <div class="card mb-4">
+                <div class="card-body">
+                    <p>The Medokanja project focuses on analyzing healthcare waiting lists to enhance resource management and improve patient care for a public hospital. 
+                        The name "Medokanja" combines "Medo" (medical) and "Kanja" (patient in Japanese).</p>
+                    <h4>📋 Project Overview</h4>
+                        <p>This project aims to equip a hospital with actionable insights to minimize waiting times and enhance operational efficiency. 
+                            By utilizing historical trends (2018–2021), the dashboard identifies bottlenecks, improves service delivery, 
+                            and highlights demographic patterns and medical specialties with delays, enabling targeted improvement strategies.</p>
+                    <h4>🔑 Key Concepts</h4>
+                        <ul>
+                            <li><strong>Inpatients</strong>: Individuals requiring hospital admission for complex treatment or extended care.</li>
+                            <li><strong>Outpatients</strong>: Receive care without overnight hospitalization.</li>
+                            <li> The dataset is <strong>not normally distributed</strong>, as the mean and median are not close to each other, indicating the presence of <strong>outliers</strong> and <strong>skewed distribution</strong>.
+                                <ul>
+                                    <li><strong>Average</strong>: Sensitive to outliers, which can inflate or distort the central tendency.</li>
+                                    <li><strong>Median</strong>: Provides a more reliable central value in the presence of skewed data or extreme values, focusing on the "middle ground" for better decision-making.</li>
+                                    <p>==> Including both average and median in the dashboard offers flexibility to meet diverse analytical needs.</p>
+                                </ul>
+                            </li>
+                        </ul>
+                    <h4>📚 Prerequisites</h4>
+                        <p>The project requires <strong>Power BI Desktop and App</strong>, proficiency in building and publishing Power BI reports, and advanced knowledge of <strong>DAX formulas</strong> .</p>
+
+                    <h4>📖 Two (2) Report Pages</h4>
+                        <ul>
+                            <li><strong>A Summary Page </strong>for an overall view of the data.</li>
+                            <li><strong>A Detailed Page </strong>for granular analysis and deeper exploration.</li>
+                        </ul>
+                        <p>For better visibility, switch to full-screen mode to easily navigate and visualize the dashboard.</p>
+                    <!-- Power Bi Dashboard -->
+                    <div class="iframe-container">
+                        <iframe 
+                            title="Medokanja Dashboard"
+                            src="https://app.powerbi.com/view?r=eyJrIjoiNWJmZjVlMmEtZGJjZC00MjAyLWI0ZjUtNmMwYWRkMWNmNjRkIiwidCI6ImYxNThkZGMxLTExYTUtNDhjOS1iNjUzLWRhMzY5MTNjMGUxNyJ9"
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                    <h4>🎯 Key Insights vs. Action Plan</h4>
+                    <div class="table-responsive">
+                        <table class="table table-bordered table-striped">
+                            <thead class="table-light">
+                                <tr>
+                                    <th>Key Insights</th>
+                                    <th>Action Plan</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>The total waitlist is extremely high at <strong>709K</strong>, with outpatients contributing <strong>74%</strong> of this number.</td>
+                                    <td>Expand outpatient capacity by extending service hours, and redistributing resources from lower-pressure case types.</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Pediatric specialties</strong> (e.g., Orthopedics, Urology) show severe backlogs, especially in the <strong>0–3 month band</strong>.</td>
+                                    <td>Increase pediatric specialist availability, create dedicated pediatric service units, and prioritize pediatric cases in the <strong>0–3 month band</strong>.</td>
+                                </tr>
+                                <tr>
+                                    <td>General specialties like <strong>Accident & Emergency</strong>, <strong>ENT</strong>, and <strong>Dermatology</strong> exhibit high median waitlists.</td>
+                                    <td>Strengthen resource allocation for high-pressure specialties, especially in Day Case and Outpatient categories.</td>
+                                </tr>
+                                <tr>
+                                    <td>Most patients are concentrated in the <strong>0–3 month band</strong>, especially in the <strong>16–64 age group</strong>, across all case types.</td>
+                                    <td>Allocate resources to quickly address short-term delays, focusing on the 16–64 age group, and use fast-track processes for critical cases to prevent long-term delays.</td>
+                                </tr>
+                                <tr>
+                                    <td>The<strong>18+ month</strong> wait list is still high because the shorter wait periods (like 0-3 months, 3-6 months, etc.) are not being handled properly or in a timely manner. </td>
+                                    <td>Tackle shorter wait periods by reallocating resources and speeding up processing to prevent cases from reaching the 18+ month category.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <h4>🔗 External Links</h4>
+                        <p>To explore more about this project:</p>
+                        <ul>
+                            <li>👩🏻‍💻 Visit the complete code on <a href="https://github.com/lisek75/medokanja_powerbi" target="_blank">GitHub.</a></li>
+                            <li>📄 Have a look at the project documentation <a href="https://github.com/lisek75/medokanja_powerbi/blob/main/powerbi/docs/project_documentation.pdf" target="_blank">here.</a></li>
+                        </ul>                    
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="text-white text-center py-3">
+        <div class="footer">
+            <p>Medokanja Power BI Project Made with 🤍</p>
+        </div>
+    </footer>
+    <!-- Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
