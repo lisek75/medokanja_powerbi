@@ -5,6 +5,7 @@ Medokanja is a Power BI project designed to improve a hospital's healthcare syst
 
 The name "Medokanja" combines "Medo" (medical) and "Kanja" (patient in Japanese).
 
+[👁️ View the app here](https://lisek75.github.io/medokanja_powerbi/)
 
 ## 📂 Project Structure
 - `powerbi` - Contains the core Power BI files.
